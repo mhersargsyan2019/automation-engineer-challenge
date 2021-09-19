@@ -50,8 +50,9 @@ function App() {
                     </div>
                     <div className="one-half column">
                         <h2 data-testid="dynamic-title">{titulo}</h2>
-                        {appointments.map(appointment => (
+                        {appointments.map((appointment, index) => (
                             <Appointment
+                                index={index+1}
                                 key={appointment.id}
                                 appointment={appointment}
                                 deleteAppointment={deleteAppointment}

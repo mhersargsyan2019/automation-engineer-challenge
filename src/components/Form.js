@@ -55,7 +55,7 @@ const Form = ({ createAppointment }) => {
 
 			{error ? <p data-testid="alert" className="alert-error">All fields are required</p> : null}
 
-			<form onSubmit={submitAppointment}>
+			<form data-testid="form" onSubmit={submitAppointment}>
 				<label>Pet Name</label>
 				<input
 					data-testid="pet"
